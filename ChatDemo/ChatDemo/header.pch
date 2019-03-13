@@ -1,0 +1,23 @@
+//
+//  header.pch
+//  ChatDemo
+//
+//  Created by midland on 2019/3/11.
+//  Copyright © 2019年 midland. All rights reserved.
+//
+
+#ifndef header_pch
+#define header_pch
+
+#import "TUIKit.h"
+#import "THeader.h"
+#import "TAlertView.h"
+#import <ImSDK/IMMessageExt.h>
+#import <ImSDK/IMGroupExt.h>
+#import "UIImageView+WebCache.h"
+#import "TIMConstant.h"
+#import "THouseInfoCellData.h"
+#import "ChatHouseInfoCell.h"
+#import "TIMCustomElemTool.h"
+
+#endif /* header_pch */
