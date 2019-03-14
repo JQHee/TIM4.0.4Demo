@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E90510D2239E4490048460F /* MLChatInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E90510C2239E4490048460F /* MLChatInputTextView.m */; };
 		5E9A992F22373BED00DFC565 /* ConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A992D22373BED00DFC565 /* ConversationController.m */; };
 		5E9A993522376F4D00DFC565 /* THouseInfoCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A993422376F4D00DFC565 /* THouseInfoCellData.m */; };
 		5E9B207022388D6300F81632 /* TIMCustomElemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B206F22388D6300F81632 /* TIMCustomElemTool.m */; };
@@ -161,6 +162,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E90510B2239E4490048460F /* MLChatInputTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLChatInputTextView.h; sourceTree = "<group>"; };
+		5E90510C2239E4490048460F /* MLChatInputTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLChatInputTextView.m; sourceTree = "<group>"; };
 		5E9A992B223736CA00DFC565 /* TIMConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIMConstant.h; sourceTree = "<group>"; };
 		5E9A992D22373BED00DFC565 /* ConversationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationController.m; sourceTree = "<group>"; };
 		5E9A992E22373BED00DFC565 /* ConversationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationController.h; sourceTree = "<group>"; };
@@ -773,6 +776,8 @@
 				5ED1437722365C97007B3803 /* ChatHouseInfoCell.h */,
 				5ED1437822365C97007B3803 /* ChatHouseInfoCell.m */,
 				5ED1437922365C97007B3803 /* ChatHouseInfoCell.xib */,
+				5E90510B2239E4490048460F /* MLChatInputTextView.h */,
+				5E90510C2239E4490048460F /* MLChatInputTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1047,6 +1052,7 @@
 				5ED142C92236076F007B3803 /* TGroupMemberController.m in Sources */,
 				5ED142A92236076F007B3803 /* TTextView.m in Sources */,
 				5ED143CC223662A1007B3803 /* SDWebImageCodersManager.m in Sources */,
+				5E90510D2239E4490048460F /* MLChatInputTextView.m in Sources */,
 				5ED142A82236076F007B3803 /* TTextMessageCell.m in Sources */,
 				5ED143C8223662A1007B3803 /* SDImageCache.m in Sources */,
 				5ED1429B2236076F007B3803 /* TFileMessageCell.m in Sources */,

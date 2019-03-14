@@ -67,6 +67,7 @@
     _inputController.delegate = self;
     [self addChildViewController:_inputController];
     [self.view addSubview:_inputController.view];
+
 }
 
 

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#define sdkAppid          1400190791
+#define sdkAppid          1400193161
 #define sdkAccountType    @"36862"
 
 @interface AppDelegate () <TAlertViewDelegate>

@@ -994,6 +994,7 @@
 - (void)sendHouseInfoMessage:(id)houseInfo {
     THouseInfoCellData *houseInfoData = [[THouseInfoCellData alloc] init];
     houseInfoData.head = TUIKitResource(@"default_head");
+    houseInfoData.head = @"https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=686cede7cdcec3fd943ea175e689d4b6/1f178a82b9014a90277d5696a7773912b31bee5e.jpg";
     houseInfoData.isSelf = YES;
     TIMCustomElem *data = (TIMCustomElem *)houseInfo;
     NSDictionary *dict = [TIMCustomElemTool parsingData:data.data];
@@ -1012,7 +1013,8 @@
     TImageMessageCellData *uiImage = [[TImageMessageCellData alloc] init];
     uiImage.path = path;
     uiImage.length = data.length;
-    uiImage.head = TUIKitResource(@"default_head");
+    uiImage.head = @"https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=686cede7cdcec3fd943ea175e689d4b6/1f178a82b9014a90277d5696a7773912b31bee5e.jpg";
+    // TUIKitResource(@"default_head");
     uiImage.isSelf = YES;
     uiImage.uploadProgress = 0;
     [self sendMessage:uiImage];
@@ -1052,7 +1054,8 @@
     uiVideo.videoItem.duration = duration;
     uiVideo.videoItem.length = videoData.length;
     uiVideo.videoItem.type = url.pathExtension;
-    uiVideo.head = TUIKitResource(@"default_head");
+    //uiVideo.head = TUIKitResource(@"default_head");
+    uiVideo.head = @"https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=686cede7cdcec3fd943ea175e689d4b6/1f178a82b9014a90277d5696a7773912b31bee5e.jpg";
     uiVideo.isSelf = YES;
     uiVideo.uploadProgress = 0;
     [self sendMessage:uiVideo];
@@ -1075,7 +1078,8 @@
             uiFile.path = filePath;
             uiFile.fileName = fileName;
             uiFile.length = (int)fileSize;
-            uiFile.head = TUIKitResource(@"default_head");
+            // uiFile.head = TUIKitResource(@"default_head");
+            uiFile.head = @"https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=686cede7cdcec3fd943ea175e689d4b6/1f178a82b9014a90277d5696a7773912b31bee5e.jpg";
             uiFile.isSelf = YES;
             uiFile.uploadProgress = 0;
             [ws sendMessage:uiFile];

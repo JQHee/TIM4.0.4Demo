@@ -37,7 +37,7 @@
 
 #pragma mark - event response
 - (void) loginAction {
-    [[TUIKit sharedInstance] loginKit:USER_NAME userSig:IDENTIFIER succ:^{
+    [[TUIKit sharedInstance] loginKit:USER_NAME_2 userSig:IDENTIFIER_2 succ:^{
         // 自动登录成功跳转其他页面
         NSLog(@"登录成功");
     } fail:^(int code, NSString *msg) {
@@ -52,7 +52,7 @@
 
 - (void) c2cAction {
     
-    NSString *user = @"erp_pk_0BF71FA87590F655E050007F01007F2F";
+    NSString *user = @"erp_pk_1001";
     TConversationCellData *data = [[TConversationCellData alloc] init];
     data.convId = user;
     data.convType = TConv_Type_C2C;

@@ -91,6 +91,11 @@
     [_inputTextView.layer setBorderColor:TTextView_Line_Color.CGColor];
     [_inputTextView setReturnKeyType:UIReturnKeySend];
     [self addSubview:_inputTextView];
+    
+#warning mark - 只需要普通的文字聊天
+    [_micButton setHidden:YES];
+    [_moreButton setHidden:YES];
+    [_faceButton setHidden:YES];
 }
 
 - (void)defaultLayout
@@ -103,9 +108,11 @@
     _moreButton.frame = CGRectMake(Screen_Width - buttonSize.width - TTextView_Margin, buttonOriginY, buttonSize.width, buttonSize.height);
     _faceButton.frame = CGRectMake(_moreButton.frame.origin.x - buttonSize.width - TTextView_Margin, buttonOriginY, buttonSize.width, buttonSize.height);
     
-    CGFloat beginX = _micButton.frame.origin.x + _micButton.frame.size.width + TTextView_Margin;
-    CGFloat endX = _faceButton.frame.origin.x - TTextView_Margin;
-    _recordButton.frame = CGRectMake(beginX, (TTextView_Height - TTextView_TextView_Height_Min) * 0.5, endX - beginX, TTextView_TextView_Height_Min);
+    // CGFloat beginX = _micButton.frame.origin.x + _micButton.frame.size.width + TTextView_Margin;
+    // CGFloat endX = _faceButton.frame.origin.x - TTextView_Margin;
+    // _recordButton.frame = CGRectMake(beginX, (TTextView_Height - TTextView_TextView_Height_Min) * 0.5, endX - beginX, TTextView_TextView_Height_Min);
+#warning mark - 只保留文件输入框
+    _recordButton.frame = CGRectMake(10, (TTextView_Height - TTextView_TextView_Height_Min) * 0.5, Screen_Width - 20, TTextView_TextView_Height_Min);
     _inputTextView.frame = _recordButton.frame;
 }
 

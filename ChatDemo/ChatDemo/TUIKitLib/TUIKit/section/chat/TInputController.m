@@ -56,6 +56,7 @@ typedef NS_ENUM(NSUInteger, InputStatus) {
     _textView = [[TTextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, TTextView_Height)];
     _textView.delegate = self;
     [self.view addSubview:_textView];
+
 }
 
 - (void)keyboardWillHide:(NSNotification *)notification

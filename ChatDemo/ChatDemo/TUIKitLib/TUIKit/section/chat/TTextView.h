@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TResponderTextView.h"
+#import "MLChatInputTextView.h"
 
 @class TTextView;
 @protocol TTextViewDelegate <NSObject>
